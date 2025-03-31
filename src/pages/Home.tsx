@@ -2,6 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download, Database, Code, BarChart2, Brain, LineChart, BrainCircuit } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import myImage from '/src/assets/Vengat.jpg';
+import timeSeriesForcast from '/src/assets/time_series_forcasting.jpg';
+<img src={myImage} alt="My Image" />;
+
 
 const Home: React.FC = () => {
   return (
@@ -47,7 +51,7 @@ const Home: React.FC = () => {
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden glass-card p-1">
                   <img 
-                    src="../src/assets/Vengat.jpg"
+                    src={myImage}
                     alt="Profile" 
                     className="w-full h-full object-cover rounded-full"
                   />
@@ -142,7 +146,7 @@ const Home: React.FC = () => {
               {
                 title: 'Time Series Forecasting',
                 description: 'A time series forecasting model for financial data using deep learning techniques.',
-                image:"../src/assets/time_series_forcasting.jpg", 
+                image: timeSeriesForcast, 
                 tags: ['Deep Learning', 'Finance', 'Python'],
               },
             ].map((project, index) => (

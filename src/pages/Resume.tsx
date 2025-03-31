@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Download, FileText, Briefcase, GraduationCap, Award } from 'lucide-react';
-
+import myImage from '/src/assets/Vengat.jpg';
+import myResume from '/src/assets/Vengateshwaran_resume.pdf';
+ 
 const Resume: React.FC = () => {
   return (
     <div className="min-h-screen pt-32">
@@ -20,11 +22,11 @@ const Resume: React.FC = () => {
           </div>
           
           <a 
-            href="../src/assets/Vengateshwaran resume .pdf"  
+            href={myResume}  
             className="btn-primary mt-6 md:mt-0 flex items-center justify-center w-full md:w-auto"
             download
           >
-            <Download size={18} className="mr-2" /> Download Resume
+            <Download size={18} className="mr-2"/> Download Resume
           </a>
         </motion.div>
         
@@ -32,7 +34,7 @@ const Resume: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <img 
-                src="../src/assets/Vengat.jpg"  
+                src={myImage} 
                 alt="Profile" 
                 className="w-full h-auto rounded-lg mb-4"
               />
@@ -238,7 +240,7 @@ const Resume: React.FC = () => {
                         <div className="text-sm opacity-70">
                           <span>{cert.issuer}</span>
                           <span className="mx-1">•</span>
-                          <span>{cert.year}</span>
+                          <span>{cert.year}</span> 
                         </div>
                       </div>
                     </div>
@@ -246,13 +248,13 @@ const Resume: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
         
         <div className="text-center">
           <p className="opacity-80 mb-6">Need a more detailed version of my resume?</p>
           <a 
-            href="../src/assets/Vengateshwaran resume .pdf"  
+            href={myResume}  
             className="btn-primary inline-flex items-center"
             download
           >

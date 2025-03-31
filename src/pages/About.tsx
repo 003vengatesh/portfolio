@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, BookOpen, Briefcase, Code, Coffee, Download, Heart, Music, Pen } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import myImage from '/src/assets/Vengat.jpg';
 
 const About: React.FC = () => {
   const skills = [
@@ -66,7 +67,7 @@ const About: React.FC = () => {
             <div className="md:col-span-1">
               <div className="rounded-lg overflow-hidden mb-4">
                 <img 
-                  src="../src/assets/Vengat.jpg" 
+                  src={myImage} 
                   alt="Profile" 
                   className="w-full h-auto"
                 />

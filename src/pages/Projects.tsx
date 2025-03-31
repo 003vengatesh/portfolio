@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import timeSeriesForcast from '/src/assets/time_series_forcasting.jpg';
 import {  Search } from 'lucide-react';
      // ExternalLink, Github,
 const Projects: React.FC = () => {
@@ -30,7 +31,7 @@ const Projects: React.FC = () => {
       id: 3,
       title: 'Time Series Forecasting',
       description: 'A time series forecasting model for financial data using deep learning techniques.',
-      image: "../src/assets/time_series_forcasting.jpg",
+      image: timeSeriesForcast,
       tags: ['Deep Learning', 'Finance', 'Python'],
       category: 'deep-learning',
       // github: '#',
