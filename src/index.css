@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #4c4ce9;
+  --secondary: #ffffff;
+  --accent: #9a6ff0;
+  --background: #01040c;
+  --foreground: #f8fafc;
+  --card: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+}
+
+.light {
+  --primary: #4f46e5;
+  --secondary: #fcfcfc;
+  --accent: #8b5cf6;
+  --background: #f4a988;
+  --foreground: #0f172a;
+  --card: rgba(0, 0, 0, 0.02);
+  --card-border: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: all 0.3s ease;
+}
+
+.glass-card {
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.neomorphic {
+  border-radius: 1rem;
+  background: var(--background);
+  box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(255, 255, 255, 0.05);
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all duration-300 font-medium;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-transparent border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition-all duration-300 font-medium;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 relative inline-block;
+  }
+  
+  .section-title::after {
+    @apply content-[''] absolute -bottom-2 left-0 w-2/3 h-1 bg-indigo-600 rounded-full;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
