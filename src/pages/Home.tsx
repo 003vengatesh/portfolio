@@ -141,7 +141,7 @@ const Home: React.FC = () => {
               {
                 title: 'Diabetes Prediction System',
                 description: 'An end-to-end ML application built with Django to predict diabetes risk from medical indicators using predictive analytics and classification modeling.',
-                image: '/src/assets/project_images/diabetis_prediction.jpg',
+                image: '/src/assets/diabetis_prediction.jpg',
                 tags: ['Machine Learning', 'Django', 'Healthcare'],
                 github: 'https://github.com/003vengatesh/Cuby_Assistant'   // change to correct repo if separate
               },
