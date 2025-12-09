@@ -2,83 +2,127 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* ===== Light Theme ===== */
 :root {
-  --primary: #4c4ce9;
-  --secondary: #ffffff;
-  --accent: #9a6ff0;
-  --background: #01040c;
-  --foreground: #f8fafc;
-  --card: rgba(255, 255, 255, 0.05);
-  --card-border: rgba(255, 255, 255, 0.1);
+  --primary: #204ba3;          /* Deep corporate blue */
+  --secondary: #eef3f9;        /* Clean bright surface */
+  --accent: #4f8aff;           /* Light tone for CTAs */
+
+  --background: #f8fafc;       /* Workplace-clean white */
+  --foreground: #1e293b;       /* Slate text – very professional */
+
+  --card: rgba(0, 0, 0, 0.035);
+  --card-border: rgba(0, 0, 0, 0.08);
+
+  --shadow-light: rgba(0, 0, 0, 0.03);
+  --shadow-dark: rgba(0, 0, 0, 0.35);
 }
 
+/* ===== Default (Dark) Theme ===== */
 .light {
-  --primary: #4f46e5;
-  --secondary: #fcfcfc;
-  --accent: #8b5cf6;
-  --background: #f4a988;
-  --foreground: #0f172a;
-  --card: rgba(0, 0, 0, 0.02);
-  --card-border: rgba(0, 0, 0, 0.05);
+  /* Core brand palette */
+  --primary: #2a57c7;          /* Elegant enterprise blue */
+  --secondary: #dce3f0;        /* Cold neutral */
+  --accent: #6ea8ff;           /* Light blue accent */
+
+  /* Surfaces */
+  --background: #0e1525;       /* Graphite navy workspace */
+  --foreground: #e6e9f0;       /* Soft, high-contrast text */
+
+  --card: rgba(255, 255, 255, 0.04);   /* Subtle glass layer */
+  --card-border: rgba(255, 255, 255, 0.08);
+
+  --shadow-light: rgba(255, 255, 255, 0.03);
+  --shadow-dark: rgba(0, 0, 0, 0.45);
 }
 
+
+
+/* Page base styling */
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--background);
   color: var(--foreground);
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Glass Panel */
 .glass-card {
   background: var(--card);
-  backdrop-filter: blur(10px);
-  color: white;
+  backdrop-filter: blur(14px);
   border: 1px solid var(--card-border);
-  border-radius: 1rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
- 
+  border-radius: 0.85rem;
+  box-shadow:
+     0 4px 28px var(--shadow-dark),
+     0 0 1px var(--shadow-light);
 }
 
+/* Neomorphic Surfaces (Subtle) */
 .neomorphic {
-  border-radius: 1rem;
   background: var(--background);
-  box-shadow: 
-    5px 5px 10px rgba(0, 0, 0, 0.2),
-    -5px -5px 10px rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  box-shadow:
+    5px 5px 16px var(--shadow-dark),
+    -4px -4px 12px var(--shadow-light);
 }
 
+/* Buttons */
 @layer components {
   .btn-primary {
-    @apply px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all duration-300 font-medium;
+    @apply px-5 py-2.5 font-medium rounded-lg transition-all duration-300;
+    background-color: var(--primary);
+    color: white;
   }
-  
-  .btn-secondary {
-    @apply px-6 py-3 bg-transparent border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition-all duration-300 font-medium;
+  .btn-primary:hover {
+    background-color: var(--accent);
   }
 
-  .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-8 relative inline-block;
+  .btn-secondary {
+    @apply px-5 py-2.5 font-medium rounded-lg border transition-all duration-300;
+    border-color: var(--primary);
+    color: var(--primary);
+    background: transparent;
   }
-  
+  .btn-secondary:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+
+  /* Section Title */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 inline-block relative;
+    color: var(--foreground);
+  }
   .section-title::after {
-    @apply content-[''] absolute -bottom-2 left-0 w-2/3 h-1 bg-indigo-600 rounded-full;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 55%;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 10px;
   }
 }
 
+/* Gradient Headings */
 .gradient-text {
-  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background: linear-gradient(90deg,
+    var(--primary),
+    var(--accent)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Animations */
+/* Subtle Floating Animation */
 @keyframes float {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-6px); }
   100% { transform: translateY(0px); }
 }
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
-

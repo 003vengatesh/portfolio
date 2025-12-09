@@ -105,38 +105,39 @@ const Resume: React.FC = () => {
                 <div className="space-y-6">
                   {[
                     {
-                      role: 'AI & ML Intern',
+                      role: 'Web Developer',
+                      company: 'NPR College of Education',
+                      period: 'Jul 2025 - Present',
+                      description: [
+                        'Designing and developing secure, scalable, and responsive web applications for academic and administrative systems.',
+                        'Building user-centric interfaces using modern frontend technologies and optimized backend integrations.',
+                        'Implementing authentication, role-based access control, and database-driven modules for institutional platforms.',
+                        'Actively contributing to digital transformation initiatives within the college environment.',
+                      ],
+                    },
+                    {
+                      role: 'Data Science & Business Analytics Intern',
+                      company: 'The Sparks Foundation',
+                      period: 'Nov 2023 - Jan 2024',
+                      description: [
+                        'Worked on real-world business datasets to build predictive machine learning models using Python.',
+                        'Performed data analysis, feature engineering, and model evaluation for business-driven use cases.',
+                        'Developed end-to-end ML workflows from preprocessing to deployment-ready predictions.',
+                        'Strengthened applied knowledge in machine learning, analytics, and data-driven problem solving.',
+                      ],
+                    },
+                    {
+                      role: 'Data Science & Machine Learning Intern',
                       company: 'CodSoft',
-                      period: 'Aug 2023 - Oct 2023',
+                      period: 'Sep 2023 - Oct 2023',
                       description: [
-                        'Implemented machine learning algorithms to optimize inventory management, reducing stockouts by 40%.',
-                        'Developed data analytics models in Python, achieving a 25% decrease in customer churn.',
-                        'Applied NLP techniques and Power BI for insightful data visualization and business decision-making.',
-                        'Showcased adaptability and innovation through high-impact projects in machine learning and data science.',
+                        'Built machine learning models for classification and prediction using real-world datasets.',
+                        'Worked extensively on data preprocessing, feature selection, and model optimization.',
+                        'Developed projects in NLP and predictive analytics using Python and scikit-learn.',
+                        'Demonstrated strong problem-solving skills through practical, production-style ML implementations.',
                       ],
                     },
-                    {
-                      role: "Data Science Intern",
-                      company: "Oasis Infobyte",
-                      period: "Oct 2023 - Nov 2023",
-                      description: [
-                        "Conducted statistical analysis and applied ML techniques to solve real-world business challenges.",
-                        "Developed data-driven solutions using Python and machine learning models for impactful results.",
-                        "Gained hands-on experience in data preprocessing, visualization, and model optimization.",
-                        "Enhanced problem-solving and analytical skills through end-to-end AI/ML projects."
-                      ],
-                    },
-                    {
-                      role: "Data Analyst Intern",
-                      company: "Meriskill",
-                      period: "Sept 2023 - Oct 2023",
-                      description: [
-                        "Utilized Power BI and Tableau to create interactive dashboards for business insights.",
-                        "Applied data cleansing, transformation, and visualization techniques to improve decision-making.",
-                        "Contributed to process optimization through advanced analytics and data-driven strategies.",
-                        "Strengthened expertise in business intelligence tools and real-world data analytics."
-                      ],
-                    },
+
                   ].map((job, index) => (
                     <div key={index} className="glass-card p-6">
                       <h3 className="text-xl font-semibold">{job.role}</h3>

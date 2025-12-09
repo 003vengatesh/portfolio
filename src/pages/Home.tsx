@@ -34,7 +34,7 @@ const Home: React.FC = () => {
                 </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact" className="btn-primary flex items-center">
-                  Hire Me <ArrowRight size={18} className="ml-2" />
+                  Connect <ArrowRight size={18} className="ml-2" />
                 </Link>
                 <Link to="/resume" className="btn-secondary flex items-center">
                   Download Resume <Download size={18} className="ml-2" />
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
                   animate={{ y: [0, -10, 0] }}
                   transition={{ repeat: Infinity, duration: 3, delay: 1.5, ease: "easeInOut" }}
                 >
-                  <BarChart2 size={24} className="text-secondary" />
+                  <BarChart2 size={24} className="text-primary" />
                 </motion.div>
               </div>
             </motion.div>
@@ -132,23 +132,27 @@ const Home: React.FC = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: 'Predictive Analytics Dashboard',
-                description: 'A real-time dashboard for predictive analytics using machine learning algorithms.',
-                image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-                tags: ['Python', 'ML', 'Dashboard'],
+                title: 'CUBY.AI – Intelligent Voice Assistant',
+                description: 'A generative-AI powered desktop assistant enabling full voice-based system control, OS automation, NLP conversation, and smart task execution.',
+                image: 'https://images.unsplash.com/photo-1530435460869-d13625c69bbf?auto=format&fit=crop&w=2070&q=80',
+                tags: ['Python', 'AI', 'NLP', 'Automation'],
+                github: 'https://github.com/003vengatesh/Cuby.AI/tree/main'
               },
               {
-                title: 'Natural Language Processing Tool',
-                description: 'An NLP tool that analyzes sentiment and extracts key information from text data.',
-                image: 'https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-                tags: ['NLP', 'Python', 'AI'],
+                title: 'Diabetes Prediction System',
+                description: 'An end-to-end ML application built with Django to predict diabetes risk from medical indicators using predictive analytics and classification modeling.',
+                image: '/src/assets/project_images/diabetis_prediction.jpg',
+                tags: ['Machine Learning', 'Django', 'Healthcare'],
+                github: 'https://github.com/003vengatesh/Cuby_Assistant'   // change to correct repo if separate
               },
               {
-                title: 'Time Series Forecasting',
-                description: 'A time series forecasting model for financial data using deep learning techniques.',
-                image: timeSeriesForcast, 
-                tags: ['Deep Learning', 'Finance', 'Python'],
-              },
+                title: 'Credit Card Fraud Detection',
+                description: 'A high-accuracy fraud detection model using ML classifiers and anomaly analysis to identify fraudulent financial transactions.',
+                image: '/src/assets/project_images/credit_card_fraud_detection.jpg',
+                tags: ['ML', 'Analytics', 'Security'],
+                github: 'https://github.com/003vengatesh/CODSOFT/tree/main/Machine%20Learning'
+              }
+
             ].map((project, index) => (
               <motion.div
                 key={index}

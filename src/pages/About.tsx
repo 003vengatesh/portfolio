@@ -16,30 +16,162 @@ const About: React.FC = () => {
   ];
 
   const certifications = [
-    { name: 'Machine Learning Specialization', issuer: 'Udemy', year: '2023' },
-    { name: 'Deep Learning Specialization', issuer: 'DeepLearning.AI', year: '2022' },
-    { name: 'Data Science Professional Certificate', issuer: 'IBM', year: '2021' },
-    { name: 'TensorFlow Developer Certificate', issuer: 'Google', year: '2021' },
+    {
+      name: 'The Cybersecurity Threat Landscape',
+      issuer: 'LinkedIn',
+      year: '2024',
+      skills: ['Cybersecurity', 'Threat & Vulnerability Management'],
+    },
+    {
+      name: 'MATLAB Certified',
+      issuer: 'Great Learning',
+      year: '2024',
+      credentialId: 'verify.mygreatlearning.com/ZTOZWQBQ',
+    },
+    {
+      name: 'Introduction to Deep Learning',
+      issuer: 'Infosys Springboard',
+      year: '2023',
+    },
+    {
+      name: 'Probability for Data Science',
+      issuer: 'Great Learning',
+      year: '2023',
+      credentialId: 'verify.mygreatlearning.com/NOTATSGG',
+    },
+    {
+      name: 'Analyzing and Visualizing Data with Microsoft Power BI',
+      issuer: 'Great Learning',
+      year: '2023',
+      credentialId: 'verify.mygreatlearning.com/GAMGMRDG',
+    },
+    {
+      name: 'Tableau Desktop',
+      issuer: 'Udemy',
+      year: '2023',
+      credentialId: 'UC-616df22-31d9-4811-8bb9-a63823229452',
+    },
+    {
+      name: 'Data Analysis',
+      issuer: 'Udemy',
+      year: '2023',
+      credentialId: 'UC-e89ef463-507b-427e-b017-0d450b7d9374',
+    },
+    {
+      name: 'Mastering Data Visualization with Python',
+      issuer: 'Udemy',
+      year: '2023',
+      credentialId: 'UC-366dbf20-65bf-4470-9dce-9d0887ea145b',
+    },
+    {
+      name: 'Python Seaborn',
+      issuer: 'Great Learning',
+      year: '2023',
+      credentialId: 'verify.mygreatlearning.com/QEWWQOQV',
+    },
+    {
+      name: 'Deep Learning',
+      issuer: 'Great Learning',
+      year: '2023',
+      credentialId: 'verify.mygreatlearning.com/GYLUZDKM',
+    },
+    {
+      name: 'Machine Learning',
+      issuer: 'Great Learning',
+      year: '2023',
+      credentialId: 'verify.mygreatlearning.com/FUYRLVJG',
+    },
+    {
+      name: 'Microsoft Excel – Advanced',
+      issuer: 'Naan Mudhalvan',
+      year: '2023',
+    },
+    {
+      name: 'Microsoft PowerPoint – Advanced',
+      issuer: 'Naan Mudhalvan',
+      year: '2023',
+    },
+    {
+      name: 'Object Oriented Programming in Python',
+      issuer: 'Udemy',
+      year: '2023',
+      credentialId: 'UC-38au841c-add-4810-9504-ef16ee541b60',
+    },
+    {
+      name: 'Advanced Python 3 Course',
+      issuer: 'Udemy',
+      credentialId: 'UC-3c3cfb61-2472-4919-9107-43d5c48b3694',
+    },
+    {
+      name: 'Artificial Intelligence and Machine Learning for Managers',
+      issuer: 'Udemy',
+      credentialId: 'UC-664039df-1989-46c2-b050-f09207a1765f',
+    },
+    {
+      name: 'Learn to Create AI (JARVIS) Assistant with Python',
+      issuer: 'Udemy',
+      credentialId: 'UC-1f6c7bf4-632b-4388-b27c-81ea3cd54dad',
+    },
+    {
+      name: 'Microsoft Word – Advanced',
+      issuer: 'Udemy',
+      credentialId: 'UC-9e6d8142-c9ba-44b7-9ddb-b9f3d48a3d3f',
+    },
+    {
+      name: 'MySQL Database Development Mastery',
+      issuer: 'Udemy',
+      credentialId: 'UC-68ed2f32-c66c-45d6-b52b-30fe6e320417',
+    },
+    {
+      name: 'Statistics for Machine Learning',
+      issuer: 'Great Learning',
+      credentialId: 'verify.mygreatlearning.com/UMTBJQGK',
+    },
   ];
+
 
   const experiences = [
     {
-      company: 'CodSoft',
-      role: 'AI & ML Intern',
-      period: 'Aug 2023 - Oct 2023',
-      description: 'Implemented AI & ML solutions, focusing on model development and optimization.',
+      company: 'NPR College of Education',
+      role: 'Web Developer',
+      period: 'Jul 2025 - Present',
+      location: 'Dindigul, Tamil Nadu, India',
+      description: 'Developing secure, scalable, and user-centric web applications for academic and administrative systems. Responsible for full-stack development, performance optimization, UI/UX improvements, and deployment of production-grade solutions.',
+    },
+    {
+      company: 'The Sparks Foundation',
+      role: 'Data Science & Business Analytics Intern',
+      period: 'Nov 2023 - Jan 2024',
+      location: 'Remote, India',
+      description: 'Worked on data analysis, visualization, and business analytics projects. Applied Python, Pandas, and data-driven techniques to derive actionable insights and solve real-world business problems.',
     },
     {
       company: 'Oasis Infobyte',
       role: 'Data Science Intern',
-      period: 'Jun 2023 - Aug 2023',
-      description: 'Worked on data science solutions and analytics projects.',
+      period: 'Oct 2023 - Nov 2023',
+      location: 'Remote, India',
+      description: 'Built machine learning and NLP-based solutions including classification and prediction models. Gained hands-on experience in supervised learning, data preprocessing, and real-world ML workflows.',
     },
     {
-      company: 'Meriskill',
-      role: 'Data Analytics Intern',
-      period: 'May 2023 - Jun 2023',
-      description: 'Focused on data analytics and visualization projects.',
+      company: 'MeriSKILL',
+      role: 'Data Analyst Intern',
+      period: 'Oct 2023',
+      location: 'Remote, India',
+      description: 'Performed data cleaning, exploratory analysis, and business reporting using Python and Pandas. Focused on transforming raw datasets into meaningful insights through structured analytics.',
+    },
+    {
+      company: 'CodSoft',
+      role: 'Data Science Intern',
+      period: 'Oct 2023',
+      location: 'Remote, India',
+      description: 'Developed predictive models for real-world datasets including classification and regression tasks. Gained hands-on exposure to feature engineering, visualization, and ML pipelines.',
+    },
+    {
+      company: 'CodSoft',
+      role: 'Machine Learning Intern',
+      period: 'Sep 2023',
+      location: 'Remote, India',
+      description: 'Implemented machine learning models for NLP and predictive analytics use cases such as spam detection, credit card fraud detection, and customer churn prediction using supervised learning techniques.',
     },
   ];
 
@@ -80,16 +212,13 @@ const About: React.FC = () => {
             </div>
             
             <div className="md:col-span-2">
-              <h2 className="text-2xl font-semibold mb-4">Who am I?</h2>
+              <h2 className="text-2xl font-semibold mb-4">A Little Summary :</h2>
               <p className="mb-4 opacity-80">
-                I am Vengateshwaran N, a passionate Computer Science student and Data Science enthusiast with a strong foundation in Python, SQL, machine learning, and data analysis. Currently pursuing my B.Sc. in Computer Science at NPR Arts and Science College, I have actively engaged in hands-on projects and internships that showcase my expertise in AI, ML, data visualization, and full-stack development.
-              </p>
+                I am a Web Developer with a strong engineering foundation and an evolving specialization in Artificial Intelligence. I design and build secure, scalable, and user-focused applications using modern web technologies, while actively expanding my expertise in Machine Learning, Deep Learning, and data-driven systems.</p>
               <p className="mb-4 opacity-80">
-              With internship experience at CodSoft, Oasis Infobyte, and Meriskill, I have worked on impactful projects such as machine learning-based inventory optimization, customer churn reduction, and fraud detection systems. My proficiency in Django, Flask, Power BI, and Tableau enables me to develop end-to-end solutions, blending analytics with software development.
-              </p>
-              <p className="opacity-80">
-              My final-year project, CUBY Assistant with Generative AI, leverages BERT and transformers to create an advanced voice assistant that streamlines system control and automates tasks. Alongside my technical pursuits, I have contributed as a Vice President of NSS, fostering leadership and teamwork.
-              </p>
+                My work blends practical software engineering with intelligent automation—ranging from full-stack web development to AI-powered applications and predictive models. I am particularly driven by building real-world solutions that enhance productivity, improve decision-making, and deliver measurable impact.</p>
+              <p className="mb-4 opacity-80">
+                I thrive in environments that value continuous learning, innovation, and collaboration. As I transition deeper into the AI domain, my goal is to grow as a full-scale AI Developer and contribute to the development of intelligent, high-performance systems across industries.</p>
             </div>
           </div>
         </motion.div>

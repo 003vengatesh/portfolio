@@ -9,85 +9,51 @@ const Projects: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: 'Predictive Analytics Dashboard',
-      description: 'A real-time dashboard for predictive analytics using machine learning algorithms.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      tags: ['Python', 'ML', 'Dashboard'],
-      category: 'machine-learning',
-      //  github: '#',
-      //  demo: '#',
+      title: 'CUBY.AI – Intelligent Voice Assistant',
+      description: 'An advanced AI voice assistant enabling full system control through voice commands, automation, chatbot interaction, and generative AI features.',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=2070&q=80',
+      tags: ['Python', 'AI', 'Automation', 'NLP'],
+      category: 'nlp',
+      github: 'https://github.com/003vengatesh/Cuby_Assistant',
     },
     {
       id: 2,
-      title: 'Natural Language Processing Tool',
-      description: 'An NLP tool that analyzes sentiment and extracts key information from text data.',
-      image: 'https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      tags: ['NLP', 'Python', 'AI'],
-      category: 'nlp',
-      // github: '#',
-      // demo: '#',
+      title: 'Credit Card Fraud Detection System',
+      description: 'A high-accuracy fraud detection system using Logistic Regression and Random Forest with advanced encoding and hyperparameter tuning.',
+      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=2070&q=80',
+      tags: ['Machine Learning', 'Python', 'Classification'],
+      category: 'machine-learning',
+      github: 'https://github.com/003vengatesh/CODSOFT/tree/main/Machine%20Learning',
     },
     {
       id: 3,
-      title: 'Time Series Forecasting',
-      description: 'A time series forecasting model for financial data using deep learning techniques.',
-      image: timeSeriesForcast,
-      tags: ['Deep Learning', 'Finance', 'Python'],
-      category: 'deep-learning',
-      // github: '#',
-      // demo: '#',
+      title: 'Customer Churn Prediction',
+      description: 'A predictive ML system to identify customer churn using Random Forest, Logistic Regression, and XGBoost with ~87% accuracy.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2070&q=80',
+      tags: ['XGBoost', 'ML', 'Customer Analytics'],
+      category: 'machine-learning',
+      github: 'https://github.com/003vengatesh/CODSOFT/tree/main/Data%20Science',
     },
     {
       id: 4,
-      title: 'Customer Segmentation Analysis',
-      description: 'A clustering model to segment customers based on their purchasing behavior.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80',
-      tags: ['Clustering', 'Python', 'Business'],
-      category: 'machine-learning',
-      // github: '#',
-      // demo: '#',
+      title: 'Movie Genre Classification (NLP)',
+      description: 'An NLP-based multi-class movie genre classification system using TF-IDF and Machine Learning models.',
+      image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2070&q=80',
+      tags: ['NLP', 'TF-IDF', 'Text Classification'],
+      category: 'nlp',
+      github: 'https://github.com/003vengatesh/CODSOFT/tree/main/Machine%20Learning',
     },
     {
       id: 5,
-      title: 'Image Classification Model',
-      description: 'A deep learning model for classifying images using convolutional neural networks.',
-      image: 'https://images.unsplash.com/photo-1527430253228-e93688616381?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      tags: ['CNN', 'Computer Vision', 'Python'],
+      title: 'MedMateAI – AI Healthcare Assistant',
+      description: 'An AI-powered healthcare assistant for medical guidance, symptom analysis, and intelligent responses.',
+      image: 'src/assets/project_images/medmate_ai.jpg',
+      tags: ['Healthcare AI', 'Python', 'ML'],
       category: 'deep-learning',
-      // github: '#',
-      // demo: '#',
-    },
-    {
-      id: 6,
-      title: 'Recommendation System',
-      description: 'A collaborative filtering recommendation system for an e-commerce platform.',
-      image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80',
-      tags: ['Recommendation', 'Python', 'E-commerce'],
-      category: 'machine-learning',
-      // github: '#',
-      // demo: '#',
-    },
-    {
-      id: 7,
-      title: 'Chatbot with NLP',
-      description: 'An intelligent chatbot built with natural language processing capabilities.',
-      image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2006&q=80',
-      tags: ['NLP', 'Chatbot', 'Python'],
-      category: 'nlp',
-      // github: '#',
-      // demo: '#',
-    },
-    {
-      id: 8,
-      title: 'Data Visualization Dashboard',
-      description: 'An interactive dashboard for visualizing complex datasets using D3.js.',
-      image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      tags: ['Visualization', 'D3.js', 'JavaScript'],
-      category: 'data-visualization',
-      // github: '#',
-      // demo: '#',
-    },
+      github: 'https://github.com/003vengatesh/MedMateAI',
+    }
   ];
+
   
   const filteredProjects = filter === 'all' 
     ? projects 
@@ -104,7 +70,7 @@ const Projects: React.FC = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-8">Projects</h1>
           
           {/* Search and Filter */}
-          <div className="glass-card p-6 mb-12">
+          {/* <div className="glass-card p-6 mb-12">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div className="relative md:w-1/3">
                 <input
@@ -148,7 +114,7 @@ const Projects: React.FC = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </motion.div>
         
         {/* Projects Grid */}

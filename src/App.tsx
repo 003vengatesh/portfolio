@@ -6,9 +6,10 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Blog from './pages/Blog';
+// import Blog from './pages/Blog';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-grow">
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/blog" element={<Blog />} />
+              {/* <Route path="/blog" element={<Blog />} /> */}
               <Route path="/resume" element={<Resume />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
