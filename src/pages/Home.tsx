@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download, Database, Code, BarChart2, Brain, LineChart, BrainCircuit } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import myImage from '/src/assets/Vengat.jpg';
+import Diabetis from '/src/assets/project_images/diabetis_prediction.jpg';
+import credit_card from '/src/assets/project_images/credit_card_fraud_detection.jpg';
 import timeSeriesForcast from '/src/assets/time_series_forcasting.jpg';
 <img src={myImage} alt="My Image" />;
 
@@ -141,14 +143,14 @@ const Home: React.FC = () => {
               {
                 title: 'Diabetes Prediction System',
                 description: 'An end-to-end ML application built with Django to predict diabetes risk from medical indicators using predictive analytics and classification modeling.',
-                image: '/src/assets/diabetis_prediction.jpg',
+                image: Diabetis,
                 tags: ['Machine Learning', 'Django', 'Healthcare'],
                 github: 'https://github.com/003vengatesh/Cuby_Assistant'   // change to correct repo if separate
               },
               {
                 title: 'Credit Card Fraud Detection',
                 description: 'A high-accuracy fraud detection model using ML classifiers and anomaly analysis to identify fraudulent financial transactions.',
-                image: '/src/assets/project_images/credit_card_fraud_detection.jpg',
+                image: credit_card,
                 tags: ['ML', 'Analytics', 'Security'],
                 github: 'https://github.com/003vengatesh/CODSOFT/tree/main/Machine%20Learning'
               }

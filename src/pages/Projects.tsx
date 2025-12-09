@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import MedmateAI from '/src/assets/project_images/medmate_ai.jpg';
 import timeSeriesForcast from '/src/assets/time_series_forcasting.jpg';
 import {  Search } from 'lucide-react';
      // ExternalLink, Github,
@@ -47,7 +48,7 @@ const Projects: React.FC = () => {
       id: 5,
       title: 'MedMateAI – AI Healthcare Assistant',
       description: 'An AI-powered healthcare assistant for medical guidance, symptom analysis, and intelligent responses.',
-      image: 'src/assets/project_images/medmate_ai.jpg',
+      image: MedmateAI ,
       tags: ['Healthcare AI', 'Python', 'ML'],
       category: 'deep-learning',
       github: 'https://github.com/003vengatesh/MedMateAI',
