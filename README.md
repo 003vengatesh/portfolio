@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vengateshwaran N Portfolio
 
 Professional React, TypeScript and Vite portfolio for Vengateshwaran N.
@@ -18,3 +19,6 @@ npm run lint
 ```
 
 The production build outputs to `dist/` and is ready for Vercel deployment.
+=======
+# portfolio
+>>>>>>> b6702caa4f643f23f59edf5e36727cf75dcb04ee
