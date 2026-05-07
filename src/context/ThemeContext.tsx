@@ -15,8 +15,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const shouldUseDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+    const shouldUseDark = savedTheme === 'dark';
 
     setDarkMode(shouldUseDark);
     document.documentElement.classList.toggle('dark', shouldUseDark);
