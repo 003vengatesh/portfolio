@@ -29,7 +29,7 @@ export const skillGroups = [
   },
   {
     title: 'Backend and Frameworks',
-    items: ['Spring Boot', 'Hibernate', 'CodeIgniter 4', 'Django', 'FastAPI', 'REST APIs', 'Role-Based Access Control'],
+    items: ['CodeIgniter 4', 'Django', 'FastAPI', 'REST APIs', 'Role-Based Access Control'],
   },
   {
     title: 'Frontend',
@@ -257,7 +257,7 @@ export const projects: Project[] = [
       'Supports admin control for high-volume academic test workflows.',
     ],
     tags: ['PHP', 'CodeIgniter 4', 'Assessment', 'Question Bank', 'Reports'],
-    github: 'https://github.com/003vengatesh/Letter_Communication_Portal',
+    github: 'https://github.com/003vengatesh/Letter_Communication_Portal/tree/main/app/Controllers/Assessment',
     featured: true,
   },
   {
@@ -275,7 +275,7 @@ export const projects: Project[] = [
       'Reduces manual scheduling and approval follow-up work.',
     ],
     tags: ['PHP', 'MySQL', 'Scheduling', 'Workflow', 'RBAC'],
-    github: 'https://github.com/003vengatesh/Letter_Communication_Portal',
+    github: 'https://github.com/003vengatesh/Letter_Communication_Portal/tree/main/app/Controllers/Admin',
   },
   {
     id: 'course-registration',
@@ -292,7 +292,7 @@ export const projects: Project[] = [
       'Designed to reduce manual processing for large student batches.',
     ],
     tags: ['PHP', 'CodeIgniter 4', 'MySQL', 'Course Registration', 'Student Workflow'],
-    github: 'https://github.com/003vengatesh/Letter_Communication_Portal',
+    github: 'https://github.com/003vengatesh/Letter_Communication_Portal/tree/main/app/Controllers/FsCourse',
     featured: true,
   },
   {
@@ -310,7 +310,7 @@ export const projects: Project[] = [
       'Improves visibility across session planning and participation records.',
     ],
     tags: ['PHP', 'Slot Booking', 'Attendance', 'Reports', 'MySQL'],
-    github: 'https://github.com/003vengatesh/Letter_Communication_Portal',
+    github: 'https://github.com/003vengatesh/Letter_Communication_Portal/tree/main/app/Controllers/SlotBooking',
   },
   {
     id: 'optistudio',

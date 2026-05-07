@@ -9,11 +9,8 @@ export default {
         accent: 'var(--accent)',
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-<<<<<<< HEAD
         muted: 'var(--muted)',
         surface: 'var(--surface)',
-=======
->>>>>>> b6702caa4f643f23f59edf5e36727cf75dcb04ee
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
@@ -21,8 +18,4 @@ export default {
     },
   },
   plugins: [],
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> b6702caa4f643f23f59edf5e36727cf75dcb04ee

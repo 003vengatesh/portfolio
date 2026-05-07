@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { createContext, ReactNode, useEffect, useState } from 'react';
-=======
-import React, { createContext, useState, useEffect, ReactNode } from 'react';
->>>>>>> b6702caa4f643f23f59edf5e36727cf75dcb04ee
 
 type ThemeContextType = {
   darkMode: boolean;
@@ -10,16 +6,11 @@ type ThemeContextType = {
 };
 
 export const ThemeContext = createContext<ThemeContextType>({
-<<<<<<< HEAD
   darkMode: false,
-=======
-  darkMode: true,
->>>>>>> b6702caa4f643f23f59edf5e36727cf75dcb04ee
   toggleTheme: () => {},
 });
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-<<<<<<< HEAD
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -39,27 +30,6 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
       localStorage.setItem('theme', next ? 'dark' : 'light');
       return next;
     });
-=======
-  const [darkMode, setDarkMode] = useState(true);
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-      setDarkMode(false);
-      document.documentElement.classList.add('light');
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-    if (darkMode) {
-      document.documentElement.classList.add('light');
-      localStorage.setItem('theme', 'light');
-    } else {
-      document.documentElement.classList.remove('light');
-      localStorage.setItem('theme', 'dark');
-    }
->>>>>>> b6702caa4f643f23f59edf5e36727cf75dcb04ee
   };
 
   return (
@@ -67,8 +37,4 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
       {children}
     </ThemeContext.Provider>
   );
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> b6702caa4f643f23f59edf5e36727cf75dcb04ee
